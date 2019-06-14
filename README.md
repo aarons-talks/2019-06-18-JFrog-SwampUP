@@ -41,7 +41,7 @@ The `go` toolchain keeps a local on-disk cache of every module & version it's ev
 Run this command to clear the cache:
 
 ```console
-$ sudo rm -rf $(go env GOPATH)GOPATH/pkg/mod
+$ sudo rm -rf $(go env GOPATH)/pkg/mod
 ```
 
 ### Build & Run The Server!
@@ -67,7 +67,7 @@ We're going to layer Athens on top of GoCenter to:
 
 It's pretty easy to run your own Athens. It's a free (as in beer) open source project and we provide [instructions](https://docs.gomods.io/install) for running the server in a few different configurations. Today, we're going to use [Docker](https://www.docker.com/) to run ours.
 
-First, run this to start Athens up:
+First, run this in a different shell window to start Athens up:
 
 ```console
 $ docker run \
@@ -89,7 +89,7 @@ $ export GOPROXY=http://localhost:3000
 Before you do your second build, don't remember to clear your cache just like last time:
 
 ```console
-$ sudo rm -rf $(go env GOPATH)pkg/mod
+$ sudo rm -rf $(go env GOPATH)/pkg/mod
 ```
 
 Now, you're rerady to start up the server again! Don't forget to shut down the old one (with ctrl+C) and then run:
@@ -104,7 +104,12 @@ Like I mentioned in the last step, you can run your own Athens server to build y
 
 Athens keeps its own database of _all_ the modules you request from it - public and private. This database is **write only**, which means that once you ask Athens for a module and it serves it up, that module is stored forever and will never change.
 
-This powerful database means that you can _cut Athens off from the internet_ and still build your apps with all the same performance benefits.
+This powerful database means that you can:
+
+- _Cut Athens off from the internet_
+  - For example, inside a highly firewalled organization or a locale that does not have reliable access to the internet
+- Share your private code inside your organization, without keeping multiple vendor directories in sync
+- Keep all the same performance and reliability benefits that GoCenter gives you, but with your private code too
 
 >Athens can be used inside of organizations that have completely firewalled off access to the internet
 
@@ -113,7 +118,7 @@ So, let's get started! The first step is the easiest - keep the Athens server fr
 Next, clear out your cache again:
 
 ```console
-$ sudo rm -rf $GOPATH/pkg/mod
+$ sudo rm -rf $(go env GOPATH)/pkg/mod
 ```
 
 And then, **shut down your internet connection** :see_no_evil:.

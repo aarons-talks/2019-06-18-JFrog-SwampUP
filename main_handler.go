@@ -11,9 +11,8 @@ func mainHandler(c *gin.Context) {
 	<head></head>
 	<body>
 	<center>
-	<h1>Hey GopherCon EU!</h1>
-	<h3>What better way to demo Athens than with cat pictures?</h3>
-	<h3>A demo with cat <i>and</i> dog pictures</h3>
+	<h1>Hey SwampUP!</h1>
+	<h3>What better way to demo GoCenter and Athens than with cat and dog pictures?</h3>
 	<p><a href="/kitty">Cats</a></p>
 	<p><a href="/pup">Dogs</a></p>
 	</center>
