@@ -4,7 +4,7 @@ Hey Gophers! We're gonna build an awesome webapp with [Gin](https://github.com/g
 
 The cool part though? Instead of pulling all my webapp's dependencies directly from version control systems like GitHub (which we've always been doing in the past), we're gonna build it using **module repositories**. In this demo, we'll show off [GoCenter](https://gocenter.io), [Athens](https://docs.gomods.io), and then both in action!
 
-We goiong to build our app three different ways, and we'll talk about each one.
+We're going to build our app three different ways, and we'll talk about each one.
 
 >I gave this demo at [SwampUp 2019](https://sched.co/Nd9W) in the session titled "Improving Dependencies for Everyone with Go Modules and Module Repositories"
 
