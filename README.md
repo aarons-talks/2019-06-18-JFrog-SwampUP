@@ -92,7 +92,7 @@ Before you do your second build, don't remember to clear your cache just like la
 $ sudo rm -rf $(go env GOPATH)/pkg/mod
 ```
 
-Now, you're rerady to start up the server again! Don't forget to shut down the old one (with ctrl+C) and then run:
+Now, you're ready to start up the server again! Don't forget to shut down the old one (with ctrl+C) and then run:
 
 ```console
 $ go run .
