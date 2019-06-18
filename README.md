@@ -143,6 +143,8 @@ If you want to learn more, check out [docs.gomods.io](https://docs.gomods.io)! W
 - Come to one of our [developer meetings](https://docs.gomods.io/contributing/community/developer-meetings/). Absolutely everybody is welcome, regardless of experience, background or anything else
 - And of course, file [bug reports](https://github.com/gomods/athens/issues/new/choose) or [feature requests](https://github.com/gomods/athens/issues/new/choose) and [contribute code](https://docs.gomods.io/contributing/new/development/)!
 
+Finally, we are an **inclusive, welcoming community**. You are welcome to come contribute in any way, regardless of your background or skill level. Please do come talk to us and we'll try our absolute best to answer your questions and/or help you get started.
+
 # Keep on rockin', Gophers!
 
 ![athens gopher](./athens-gopher.png)
